@@ -1,16 +1,45 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <style>
+    .cards-wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      border: 10px solid #ccc;
+      background-color: #fafafa;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card h1 {
+      font-size: 1.5em;
+    }
+
+    .card p {
+      font-size: 0.75em;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <div class="cards-wrapper">
+    <div class="card">
+      <h1>Card 1</h1>
+      <p>This is the content of Card 1.</p>
+    </div>
+    <div class="card">
+      <h1>Card 2</h1>
+      <p>This is the content of Card 2.</p>
+    </div>
+    <div class="card">
+      <h1>Card 3</h1>
+      <p>This is the content of Card 3.</p>
+    </div>
+  </div>
 </body>
-
 </html>
